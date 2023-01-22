@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'project-angular-teste';
+  transferencia: any
+
+  transferir($event) {
+    console.log($event)
+    this.transferencia = $event
+  }
 }
